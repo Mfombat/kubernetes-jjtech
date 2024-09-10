@@ -1,4 +1,4 @@
-apiVersion: v1
+iapiVersion: v1
 kind: PersistentVolume
 metadata:
   name: efs-pv
@@ -9,10 +9,12 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: efs-storage
+  storageClassName: efs-sc
   csi:
-    driver: efs.csi.aws.com
-    volumeHandle: fs-03e8b3bc4eaca2944
+    driver: efs.csi.aws.com   
+    volumeHandle: fs-0c6aba8b131d056cc
+
+>>>>>>> 1271d82ec41f95f3ef24f38e9130404c072ba825
 
 
 
